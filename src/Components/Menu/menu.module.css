@@ -1,0 +1,121 @@
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.foodSection{
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(../../fonts/interBold.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../../fonts/inter.ttf);
+}
+
+.title{
+    text-align: center;
+    font-size: 35px;
+    font-family: InterBold;
+    font-weight: bold;
+    color: #225C4B;
+    margin: 10px 0 30px 0;
+}
+
+.foods{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 80px;
+}
+
+.food{
+    width: 180px;
+    height: 240px;
+    background-color: #FDF4F6;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.foodTop{
+    width: 100%;
+    height: 65%;
+    background-color: #F9D3DD;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 15px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.foodBottom{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+}
+
+.foodPrice{
+    width: 60px;
+    height: 27px;
+    background-color: #225C4B;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Inter;
+}
+
+.foodText{
+    font-size: 19px;
+    font-family: Inter;
+    color: #225C4B;
+}
+
+
+.foodNkar{
+    position: absolute;
+    bottom: 3%;
+    animation: 1s shake infinite alternate ease-in-out;
+}
+
+
+@keyframes shake{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(10%);
+    }
+}
+
+@media screen and (max-width: 400px){
+    .food{
+        width: 95%;
+    }
+
+    .foodText{
+        text-align: center;
+    }
+
+    .foodNkar{
+        position: static;
+    }
+    
+}

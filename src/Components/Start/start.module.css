@@ -1,0 +1,82 @@
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9D3DD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+@font-face {
+    font-family: montagu;
+    src: url(../../fonts/montagu.ttf);
+}
+
+.title{
+    font-family: montagu;
+    font-size: 40px;
+    font-weight: 700;
+    color: #225C4B;
+}
+
+.burgers{
+    width: 85%;
+    animation: 1s shake infinite alternate ease-in-out;
+}
+
+@keyframes shake{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(10%);
+    }
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../../fonts/inter.ttf);
+}
+
+.text{
+    text-align: center;
+    font-size: 23px;
+    line-height: 30px;
+    font-family: inter;
+    color: #225C4B;
+    font-weight: 600;
+}
+
+.btn{
+    width: 80%;
+    height: 55px;
+    border-radius: 16px;
+    background: rgb(238,114,138);
+background: linear-gradient(180deg, rgba(238,114,138,1) 65%, rgba(232,74,105,1) 100%);
+    overflow: hidden;
+    cursor: pointer;    
+    animation: .6s pulse infinite alternate;
+}
+
+.link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 17px;
+    font-family: inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}

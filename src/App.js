@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { About, Basket, Error, Home, Login, Menu, Start } from "./Components";
+import "./global.css"
+import { Route, Router, Routes } from "react-router";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  if(window.innerWidth > 500){
+    return (
+      <Error />
+    )
+  }else{
+    return (
+      <Routes>
+        <Route index element={<Start />}/>
+        <Route path="login" element={<Login />}/>
+        <Route path="home" element={<Home />} />
+        <Route path="menu" element={<Menu />} />
+        <Route path=":basket" element={<Basket />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+    )
+  }
 }
 
 export default App;

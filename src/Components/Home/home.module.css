@@ -1,0 +1,255 @@
+.section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.search{
+    width: 100%;
+    height: 8vh;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+@font-face {
+    font-family: Montagu;
+    src: url(../../fonts/montagu.ttf);
+}
+
+.logo{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    font-size: 45px;
+    font-family: Montagu;
+    background-color: #C2E8DC;
+    border-radius: 7px;
+    color: #225C4B;
+}
+
+.searchDiv{
+    width: 82%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    width: 100%;
+    height: 50px;
+    background-color: #F9F9F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../../fonts/inter.ttf);
+}
+
+.input input{
+    width: 85%;
+    height: 50px;
+    background: none;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: Inter;
+}
+
+.burgerBox{
+    width: 95%;
+    height: 150px;
+    background-color: #F9F5D3;
+    border-radius: 12px;
+    display: flex;
+}
+
+.leftPart{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 15px;
+}
+
+.rightPart{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.burger{
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+}
+
+.text1{
+    color: #EE7089;
+    font-family: Inter;
+}
+
+.title{
+    font-family: Inter;
+    font-weight: bold;
+    font-size: 19px;
+    color: #225C4B;
+}
+
+.price{
+    width: 70px;
+    height: 30px;
+    background-color: #EE7089;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+    font-family: Inter;
+}
+
+.categories{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+}
+
+.categoryTitle{
+    font-size: 28px;
+    color: #225C4B;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+.boxes{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 0 5px;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.boxText{
+    font-family: Inter;
+    font-size: 14px;
+    color: #225C4B;
+    font-weight: bold;
+}
+
+.box:nth-child(1){
+    background-color: #FFF0E2;
+}
+
+.box:nth-child(2){
+    background-color: #DCF2DE;
+}
+
+.box:nth-child(3){
+    background-color: #E3EBF6;
+}
+
+.box:nth-child(4){
+    background-color: #ECE5FF;
+}
+
+.bestFoods{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 80px;
+}
+
+.food{
+    width: 165px;
+    height: 240px;
+    background-color: #FDF4F6;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.foodTop{
+    width: 100%;
+    height: 65%;
+    background-color: #F9D3DD;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 15px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.foodBottom{
+    width: 100%;
+    height: 40%;
+    padding: 10px;
+}
+
+.foodPrice{
+    width: 60px;
+    height: 27px;
+    background-color: #225C4B;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Inter;
+}
+
+.foodText{
+    font-size: 19px;
+    font-family: Inter;
+    color: #225C4B;
+}
+
+
+@media screen and (max-width: 365px){
+    .food{
+        width: 95%;
+    }
+
+    .foodText{
+        text-align: center;
+    }
+}
+
+

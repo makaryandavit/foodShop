@@ -1,0 +1,88 @@
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F9D3DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: merienda;
+    src: url(../../fonts/merienda.ttf);
+}
+
+.title{
+    font-family: merienda;
+    font-size: 20vw;
+    color: white;
+    animation: .7s pulse infinite alternate;
+}
+
+.nkar1{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    animation: 1.2s shake infinite alternate ease-in-out;
+}
+
+.nkar2{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    animation: 1.2s shake infinite alternate .2s ease-in-out;
+}
+
+.nkar3{
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    animation: 1.7s shake infinite alternate .3s ease-in-out;
+}
+
+.nkar4{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    animation: 1s shake infinite alternate .5s ease-in-out;
+}
+
+.nkar5{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    animation: 1.5s shake infinite alternate .8s ease-in-out;
+}
+
+.nkar6{
+    position: absolute;
+    top: 4%;
+    animation: 1.3s shake infinite alternate .2s ease-in-out;
+}
+
+.nkar7{
+    position: absolute;
+    bottom: 5%;
+    right: 25%;
+    animation: 1.1s shake infinite alternate .1s ease-in-out;
+}
+
+
+@keyframes shake{
+    from{
+        transform: scale(1.0) translateY(0);
+    }
+    to{
+        transform: scale(1.1) translateY(15%);
+    }
+}
+
+@keyframes pulse{
+    from{
+        transform: scale(1.0);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}
